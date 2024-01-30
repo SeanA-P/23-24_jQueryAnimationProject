@@ -3,78 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <style>
 
 
-        #hayHouse {
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            position: absolute;
-            left: 100px;
-            top: 400px;
+        p{
+            font-size: 13px;
         }
 
-        #stickHouse {
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            position: absolute;
-            left: 600px;
-            top: 400px;
-        }
-
-        #brickHouse {
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            position: absolute;
-            left: 1100px;
-            top: 400px;
-        }
-
-        #wolf{
-            width: 200px;
-            height: 200px;
-            background-color: transparent;
-            position: absolute;
-            left: 100px;
-            top: 700px;
-        }
     </style>
 </head>
 <body>
 <div class="container">
-
     <div class="row">
         <div class="col">
-            <button id="scene1">Scene 1</button>
+            <button id="scene1" onclick="hayHouse()">Scene 1</button>
+            <button id="scene2" onclick="stickHouse()">Scene 2</button>
+            <button id="scene3" onclick="brickHouse()">Scene 3</button>
             <img id="hayHouse" src="img/HayHouse.jpg">
             <img id="stickHouse" src="img/StickHouse.jpg">
             <img id="brickHouse" src="img/BrickHouse.jpg">
             <img id="wolf" src="img/wolf.png">
-            <img id="textBox" src="img/TextBox.png">
+            <img id="pig" src="img/pig.png">
+            <div id="textBox">
+                <img src="img/TextBox.png">
+            </div>
+            <div id="text1.0">
+                <p id="text">Little pig, little pig, <br>
+                    let me in</p>
+            </div>
+            <div id="textBox2">
+                <img src="img/TextBox.png">
+            </div>
+            <div id="text2.0">
+                <p id="text2">Not by the hair of my<br>chiny chin chin!</p>
+            </div>
+            <div id="text3.0">
+                <p id="text3">Then I'll huff, and I'll puff,<br> and I'll blow your house<br> down</p>
+            </div>
+            <div id="text4.0">
+                <p id="text4">Try it.</p>
+            </div>
+            <div id="text5.0">
+                <p id="text5">Why won't it work?</p>
+            </div>
+            <div id="text6.0">
+                <p id="text6" style="font-size: 12px" >I have put time and dedication<br>into building my home.<br>You can't get in!</p>
+            </div>
         </div>
     </div>
-
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 <script>
 
-    (document).ready(function () {
-        // Initially hide the image
-        $("#textBox").hide()
-    }NOT FIN
+    function hayHouse() {
+        $("#textBox").delay(0).fadeIn(1000).delay(4000).fadeOut(1000);
+        $("#text").delay(0).fadeIn(1000).delay(4000).fadeOut(1000);
+        $("#textBox2").delay(4000).fadeIn(1000).delay(4000).fadeOut(1000);
+        $("#text2").delay(4000).fadeIn(1000).delay(4000).fadeOut(1000);
+        $("#textBox").delay(1500).fadeIn(1000).delay(4000).fadeOut(1000);
+        $("#text3").delay(8000).fadeIn(1000).delay(4000).fadeOut(1000);
+        $("#hayHouse").delay(12000).fadeOut(3000)
 
-    function hayHouse(){
-        $(wolf).animate()
-    }
+        $("#pig").delay(15000).animate({
+            left: 600, // Adjust the final left position
+            top: 400  // Adjust the final top position
+        }, 2000);
+    };
 
+    function stickHouse(){
+        $("#wolf").delay(0).animate({
+            left: 600, // Adjust the final left position
+            top: 700  // Adjust the final top position
+        }, 2000);
+
+        $("#textBox").delay(1000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text").delay(1000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#textBox2").delay(5000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text2").delay(5000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#textBox").delay(2500).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text3").delay(9000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#stickHouse").delay(13000).fadeOut(3000)
+
+        $("#pig").delay(15000).animate({
+            left: 1100, // Adjust the final left position
+            top: 400  // Adjust the final top position
+        }, 2000);
+    };
+
+    function brickHouse(){
+        $("#wolf").delay(0).animate({
+            left: 1100, // Adjust the final left position
+            top: 700  // Adjust the final top position
+        }, 2000);
+
+        $("#textBox").delay(1000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text").delay(1000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#textBox2").delay(5000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text2").delay(5000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#textBox").delay(2500).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text3").delay(9000).animate({ left: '+=500' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#textBox2").delay(750).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text4").delay(10000).animate({ left: '+=1000' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#textBox").delay(2500).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text5").delay(14000).animate({ left: '+=1000' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#textBox2").delay(750).fadeIn(1000).delay(4000).fadeOut(1000)
+        $("#text6").delay(16000).animate({ left: '+=1000' }, 0).fadeIn(1000).delay(4000).fadeOut(1000)
+    };
 
 </script>
 </body>

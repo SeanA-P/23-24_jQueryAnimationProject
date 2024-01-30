@@ -1,0 +1,138 @@
+#hayHouse {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    z-index: 1;
+}
+
+#stickHouse {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    left: 600px;
+    top: 400px;
+    z-index: 1;
+}
+
+#brickHouse {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    left: 1100px;
+    top: 400px;
+    z-index: 1;
+}
+
+#pig {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    z-index: 0;
+}
+
+#wolf {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 100px;
+    top: 700px;
+    z-index: 2;
+}
+
+#textBox {
+    width: 600px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    left: 200px;
+    top: 600px;
+    display: none;
+    z-index: 3;
+}
+
+#textBox2 {
+    width: 600px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    display: none;
+    z-index: 3;
+}
+
+#text {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 250px;
+    top: 680px;
+    display: none;
+    z-index: 3;
+}
+
+#text2 {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 350px;
+    top: 380px;
+    display: none;
+    z-index: 3;
+}
+
+#text3 {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 250px;
+    top: 670px;
+    display: none;
+    z-index: 3;
+}
+
+#text4 {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 350px;
+    top: 380px;
+    display: none;
+    z-index: 3;
+}
+
+#text5 {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 250px;
+    top: 680px;
+    display: none;
+    z-index: 3;
+}
+
+#text6 {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 350px;
+    top: 380px;
+    display: none;
+    z-index: 3;
+}
+
